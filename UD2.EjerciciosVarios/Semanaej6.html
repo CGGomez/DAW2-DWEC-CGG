@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> <!--César Gómez Gómez DAW 2-->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+		<title>Día de Semana</title>
+		<script type="text/javascript">  		
+		function verDia(dia){
+			dia = parseInt(dia);
+			switch(dia){
+				case dia = "Lunes":
+                    console.log('Mañana es Martes');
+                    break;
+				case dia = "Martes":
+                    console.log('Mañana es Miercoles');
+                    break;
+				case dia = "Miercoles":
+                    console.log('Mañana es Jueves');
+                    break;
+                case dia = "Jueves":
+                    console.log('Mañana es Viernes');
+                    break;
+                case dia = "Vernes":
+                    console.log('Mañana es Sábado');
+                    break;
+                case dia = "Sabado":
+                    console.log('Mañana es Domingo');
+                    break;
+				case dia = "Domingo":
+                    console.log('Mañana es lunes');
+                     break;
+				default:
+                    console.log('Día de la semana inexistente');
+                    break
+			}
+		}
+		</script> 
+	</head>
+	<body>
+		<span> Ver resultado</span>
+		<br/>
+        <input type= "text" id= 'txtdia' value="Lunes"/>
+		<br/>
+		<input type="button" onclick = "verDia(document.getElementById('txtdia').value);" value = 'Pulsar'>
+	</body> 
+</html>
